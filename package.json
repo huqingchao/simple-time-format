@@ -1,0 +1,45 @@
+{
+  "name": "simple-time-format",
+  "version": "0.0.5",
+  "description": "simple-time-format",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test-c": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huqingchao/simple-time-format.git"
+  },
+  "keywords": [
+    "rollup",
+    "template",
+    "typescript"
+  ],
+  "author": "huqingchao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huqingchao/simple-time-format/issues"
+  },
+  "homepage": "https://github.com/huqingchao/simple-time-format#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "jest": "^26.6.3",
+    "rollup": "^2.45.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
+  }
+}
