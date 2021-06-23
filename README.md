@@ -1,4 +1,7 @@
 # simple-time-format
+![NPM](https://img.shields.io/npm/l/simple-time-format)
+![npm](https://img.shields.io/npm/dm/simple-time-format)
+![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/simple-time-format)
 ## 特性
 + 可在ts库中使用，内置声明文件
 + 单元测试覆盖率90%

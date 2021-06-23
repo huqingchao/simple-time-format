@@ -1,6 +1,6 @@
 {
   "name": "simple-time-format",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "simple-time-format",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -19,9 +19,10 @@
     "url": "git+https://github.com/huqingchao/simple-time-format.git"
   },
   "keywords": [
-    "rollup",
-    "template",
-    "typescript"
+    "time",
+    "format",
+    "moment",
+    "simple"
   ],
   "author": "huqingchao",
   "license": "MIT",
