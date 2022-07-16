@@ -4,7 +4,7 @@
 ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/simple-time-format)
 ## 特性
 + 可在ts库中使用，内置声明文件
-+ 单元测试覆盖率90%
++ 单元测试覆盖率95%
 + 支持esm、cjs、umd
 + 小于5kb
 
