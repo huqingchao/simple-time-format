@@ -5,13 +5,17 @@ const tf = (i: number): string => {
 }
 
 
-function simpleFormatDate(time: any, format: formatType = 'yyyy-MM-dd'): string {
+function simpleFormatDate(time: any, format: formatType = 'yyyy-MM-dd'): any {
   let t: Date
 
   if (time) {
     t = new Date(time)
   } else {
     t = new Date()
+  }
+
+  if (t.toString() === 'Invalid Date') {
+    return time;
   }
 
   return format.replace(/yyyy|MM|dd|HH|mm|ss/g, (type: string): string => {
