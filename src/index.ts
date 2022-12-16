@@ -4,8 +4,10 @@ const tf = (i: number): string => {
   return (i < 10 ? '0' : '') + i
 }
 
-
-function simpleFormatDate(time: any, format: formatType = 'yyyy-MM-dd'): any {
+function simpleFormatDate(
+  time: any = '',
+  format: formatType = 'yyyy-MM-dd'
+): any {
   let t: Date
 
   if (time) {
@@ -15,7 +17,7 @@ function simpleFormatDate(time: any, format: formatType = 'yyyy-MM-dd'): any {
   }
 
   if (t.toString() === 'Invalid Date') {
-    return time;
+    return time
   }
 
   return format.replace(/yyyy|MM|dd|HH|mm|ss/g, (type: string): string => {
@@ -24,16 +26,14 @@ function simpleFormatDate(time: any, format: formatType = 'yyyy-MM-dd'): any {
         return tf(t.getFullYear())
       case 'MM':
         return tf(t.getMonth() + 1)
-      case 'mm':
-        return tf(t.getMinutes())
       case 'dd':
         return tf(t.getDate())
       case 'HH':
         return tf(t.getHours())
-      case 'ss':
-        return tf(t.getSeconds())
+      case 'mm':
+        return tf(t.getMinutes())
       default:
-        return '??'
+        return tf(t.getSeconds())
     }
   })
 }
